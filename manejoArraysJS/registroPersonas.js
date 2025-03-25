@@ -15,12 +15,13 @@ for (let i = 0; i < numPersonas; i++) {
 let personasOrdenadas = [...personas].sort((a, b) => b[2] - a[2]);
 
 // Salida
-console.log("Lista de personas tal como fueron ingresadas:");
+console.log('\nPersonas ordenadas por edad');
 personas.forEach(persona => {
     console.log(`Nombre: ${persona[0]}, Edad: ${persona[1]}, Nota: ${persona[2]}`);
 });
 
-console.log("\nLista de personas ordenadas por nota (de mayor a menor):");
+console.log('\nPersonas ordenadas por nota');
 personasOrdenadas.forEach(persona => {
+    
     console.log(`Nombre: ${persona[0]}, Edad: ${persona[1]}, Nota: ${persona[2]}`);
 });
