@@ -1,6 +1,6 @@
-const prompt = require('prompt-sync')(); // Necesitas instalar el paquete prompt-sync para usarlo
+const prompt = require('prompt-sync')();
 
-// Paso 1: Entrada
+//Entrada
 let numPersonas = parseInt(prompt("Ingrese el número de personas que desea registrar: "));
 let personas = [];
 
@@ -11,11 +11,10 @@ for (let i = 0; i < numPersonas; i++) {
     personas.push([nombre, edad, nota]);
 }
 
-// Paso 2: Procesamiento
-// Ordenar la lista principal en función de las notas, de mayor a menor
+// Procesamiento
 let personasOrdenadas = [...personas].sort((a, b) => b[2] - a[2]);
 
-// Paso 3: Salida
+// Salida
 console.log("Lista de personas tal como fueron ingresadas:");
 personas.forEach(persona => {
     console.log(`Nombre: ${persona[0]}, Edad: ${persona[1]}, Nota: ${persona[2]}`);
