@@ -1,4 +1,4 @@
-# Paso 1: Entrada
+# Entrada
 num_personas = int(input("Ingrese el número de personas que desea registrar: "))
 personas = []
 
@@ -8,8 +8,7 @@ for i in range(num_personas):
     nota = float(input(f"Ingrese la nota de la persona {i + 1}: "))
     personas.append([nombre, edad, nota])
 
-# Paso 2: Procesamiento
-# Ordenar la lista principal en función de las notas, de mayor a menor
+# Procesamiento
 personas_ordenadas = sorted(personas, key=lambda x: x[2], reverse=True)
 
 # Paso 3: Salida
