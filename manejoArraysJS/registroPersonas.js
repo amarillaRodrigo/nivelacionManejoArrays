@@ -25,3 +25,4 @@ personasOrdenadas.forEach(persona => {
     
     console.log(`Nombre: ${persona[0]}, Edad: ${persona[1]}, Nota: ${persona[2]}`);
 });
+
